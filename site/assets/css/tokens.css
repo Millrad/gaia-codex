@@ -1,0 +1,94 @@
+/* ===== 盖亚之书 · Design Tokens =====
+   唯一视觉真相来源（见 SPEC.md）。所有页面通过 var() 消费，不直接写死色值。 */
+
+:root {
+  /* --- color: surfaces --- */
+  --bg-0: #08090a;
+  --bg-1: #0e0f10;
+  --bg-2: #141516;
+  --bg-3: #1a1b1c;
+
+  /* --- color: ink --- */
+  --ink-0: #e9e2d3;
+  --ink-1: #b6ad9b;
+  --ink-2: #8a8274;
+
+  /* --- color: accents --- */
+  --brass: #c9a25e;
+  --brass-hi: #e6ca91;
+  --brass-dim: #8a6f3e;
+  --ember: #c4532f;
+
+  /* --- color: lines --- */
+  --line: rgba(201, 162, 94, 0.18);
+  --line-strong: rgba(201, 162, 94, 0.38);
+  --line-ink: rgba(233, 226, 211, 0.12);
+  --line-ink-strong: rgba(233, 226, 211, 0.26);
+
+  /* --- faction accent (overridden per page via [data-faction]) --- */
+  --accent: var(--brass);
+  --accent-ink: #0a0908;
+
+  /* --- type --- */
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+  --font-mono: "JetBrains Mono", Consolas, "SFMono-Regular", monospace;
+  --fs-label: 11px;
+  --fs-body: clamp(15px, 0.42vw + 14px, 17px);
+  --fs-lead: clamp(20px, 1.1vw + 16px, 26px);
+  --fs-h3: clamp(20px, 1.2vw + 15px, 26px);
+  --fs-h2: clamp(28px, 2.4vw, 40px);
+  --fs-h1: clamp(32px, 3.4vw, 54px);
+  --fs-display: clamp(48px, 9vw, 132px);
+  --lh-body: 1.85;
+  --lh-tight: 1.12;
+  --track-cn: 0.02em;
+  --track-display: 0.06em;
+  --track-label: 0.28em;
+
+  /* --- space --- */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+  --s9: 96px;
+  --s10: 128px;
+
+  /* --- layout --- */
+  --w-max: 1440px;
+  --gutter: clamp(20px, 5vw, 96px);
+  --head-h: 64px;
+  --measure: 62ch;
+
+  /* --- motion --- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 180ms;
+  --t-mid: 320ms;
+  --t-slow: 620ms;
+
+  /* --- misc --- */
+  --radius: 2px;
+  --hair: 1px;
+}
+
+/* ---- faction accent themes ---- */
+[data-faction="solina"]    { --accent: #5b93a8; }
+[data-faction="xihe"]      { --accent: #c98a3f; }
+[data-faction="kataria"]   { --accent: #7b6cc4; }
+[data-faction="urvik"]     { --accent: #b0763d; }
+[data-faction="flona"]     { --accent: #8f9bab; }
+[data-faction="capetotina"]{ --accent: #d04a2f; }
+[data-faction="nibiru"]    { --accent: #8a6a4a; }
+[data-faction="gondra"]    { --accent: #4e7f86; }
+[data-faction="indar"]     { --accent: #a33a25; }
+[data-faction="fenrir"]    { --accent: #7f8388; }
+[data-faction="poludni"]   { --accent: #b09348; }
+[data-faction="qingshi"]   { --accent: #4f8ea6; }
+
+@media (max-width: 768px) {
+  :root { --head-h: 56px; }
+}

@@ -1,0 +1,147 @@
+/* ===== anim.css =====
+   动画层：逐字入场、页面转场、视差容器、滚动揭示细节。
+   所有动画只作用于 transform / opacity / filter / clip-path。
+   降级：prefers-reduced-motion 下全部归位。 */
+
+/* --- 逐字入场（由 anim.js 拆分 data-split 元素） --- */
+[data-split] {
+  display: block;
+}
+
+.split-line {
+  display: inline;
+}
+
+.split-char {
+  display: inline-block;
+  white-space: pre;
+  will-change: transform, opacity;
+}
+
+html.js [data-split] .split-char {
+  opacity: 0;
+  transform: translateY(0.55em) rotate(1.2deg);
+  animation: char-rise 900ms var(--ease-out) both;
+  animation-delay: calc(var(--i) * 58ms + 220ms);
+}
+
+html.js [data-split].is-in .split-char {
+  animation-name: char-rise;
+}
+
+@keyframes char-rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 单行淡入（副标题 / 标签） */
+html.js [data-fade] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+html.js [data-fade].is-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 900ms var(--ease-out),
+    transform 1100ms var(--ease-out);
+  transition-delay: calc(520ms + var(--i, 0) * 90ms);
+}
+
+/* --- 页面入场：hero 之上再压一层暗幕 --- */
+.page-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: var(--bg-0);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 620ms var(--ease);
+}
+
+.page-veil.is-done {
+  opacity: 0;
+}
+
+/* --- 视差图容器 --- */
+[data-parallax] {
+  will-change: transform;
+}
+
+/* --- 滚动进度（core.js 控制 scaleX） --- */
+.scroll-progress {
+  transition: transform 90ms linear;
+}
+
+/* --- 章节编号在进入视口时提亮 --- */
+.s-num span {
+  transition: color 420ms var(--ease);
+}
+
+.is-in .s-num span {
+  color: var(--brass-hi);
+}
+
+/* --- 顶部导航出现 --- */
+.site-head {
+  transform: translateY(0);
+  transition:
+    transform 420ms var(--ease),
+    background var(--t-mid) var(--ease),
+    border-color var(--t-mid) var(--ease);
+}
+
+.site-head.is-hidden {
+  transform: translateY(-100%);
+}
+
+/* --- 横向跑马灯（首页用；JS 控制 offset） --- */
+.marquee-track {
+  display: inline-flex;
+  gap: 0;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* --- 锁定条目的闪烁抑制 --- */
+.locked::after {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* --- 降级 --- */
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-split] .split-char {
+    opacity: 1;
+    transform: none;
+  }
+
+  html.js [data-split].is-in .split-char {
+    animation: none;
+  }
+
+  html.js [data-fade] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .f-hero__media img {
+    animation: none;
+    transform: none;
+  }
+
+  .scroll-line {
+    animation: none;
+    opacity: 0.6;
+  }
+
+  .page-veil {
+    transition-duration: 120ms;
+  }
+
+  .f-figure__img {
+    transform: none !important;
+  }
+}
