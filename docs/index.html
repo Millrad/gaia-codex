@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>盖亚之书 · GAIA CODEX</title>
+<meta name="description" content="神罚之后，世界法则破碎，外部法则涌入。此处记下的，只是其中一角——普罗米修的势力、法则、种族、职业与风俗。">
+<meta name="theme-color" content="#08090a">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/anim.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script defer src="assets/js/core.js"></script>
+<script defer src="assets/js/anim.js"></script>
+<script defer src="assets/js/gallery.js"></script>
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-head" data-head>
+  <a class="brand" href="index.html">
+    <span class="brand__zh">盖亚之书</span><span class="brand__en">GAIA CODEX</span>
+  </a>
+  <nav class="site-nav" aria-label="主导航">
+    <a href="#archive">档案</a>
+    <a href="archive/timeline.html">纪年</a>
+    <a href="archive/laws.html">法则</a>
+    <a href="archive/races.html">种族</a>
+    <a href="archive/jobs.html">职业</a>
+    <a href="archive/customs.html">风俗</a>
+  </nav>
+  <div class="head-meta"><span class="head-progress">档案完整度 <b>07 / 12</b></span>
+    <button class="head-btn" type="button" data-drawer-open aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+      <span>索引</span>
+    </button>
+  </div>
+</header>
+<div class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="势力索引">
+  <div class="drawer__inner">
+    <div class="drawer__head"><span class="label">FACTION INDEX · 12</span>
+      <button class="drawer__close" type="button" data-drawer-close aria-label="关闭索引">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ol class="drawer__list">
+      <li data-idx="01"><a href="factions/solina.html">索里纳 <span>SOLINA</span></a></li>
+      <li data-idx="02"><a href="factions/xihe.html">羲和百川 <span>XIHE</span></a></li>
+      <li data-idx="03"><a href="factions/kataria.html">卡塔瑞亚学院 <span>KATARIA</span></a></li>
+      <li data-idx="04"><a href="factions/urvik.html">乌尔维克 <span>URVIK</span></a></li>
+      <li data-idx="05"><a href="factions/flona.html">芙洛纳 <span>FLONA</span></a></li>
+      <li data-idx="06"><a href="factions/capetotina.html">卡佩托缇娜 <span>CAPETOTINA</span></a></li>
+      <li data-idx="07"><a href="factions/nibiru.html">尼比鲁 <span>NIBIRU</span></a></li>
+      <li data-idx="08" class="is-locked" data-locked="true"><a href="factions/gondra.html">贡德拉岛 <span>GONDRA</span></a></li>
+      <li data-idx="09"><a href="factions/indar.html">因达瑞火山 <span>INDAR</span></a></li>
+      <li data-idx="10" class="is-locked" data-locked="true"><a href="factions/fenrir.html">芬尼尔 <span>FENRIR</span></a></li>
+      <li data-idx="11" class="is-locked" data-locked="true"><a href="factions/poludni.html">波卢德尼 <span>POLUDNI</span></a></li>
+      <li data-idx="12"><a href="factions/qingshi.html">青石魔法 <span>BLUESTONE</span></a></li>
+    </ol>
+    <p class="drawer__note">标记者为封存档案 · 权限未开放</p>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero" data-hero>
+    <div class="hero__media">
+      <img src="assets/img/city-zephyr.webp" alt="蒸汽与黄铜构筑的城市天际线" fetchpriority="high" decoding="async" data-kenburns>
+    </div>
+    <div class="hero__veil" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__meta">
+      <span class="label">GAIA CODEX</span>
+      <span class="label">THIRD ERA · 72</span>
+    </div>
+    <div class="hero__body">
+      <h1 class="hero__title" data-split>盖亚之书</h1>
+      <p class="hero__sub" data-fade>据说数万年前普罗米修曾发生过一次神罚。<br>自此世界法则破碎，苍穹之外的法则涌入。</p>
+      <div class="hero__acts" data-fade>
+        <a class="btn btn--fill" href="#factions">进入势力索引</a>
+        <a class="btn" href="archive/timeline.html">查阅编年史</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span class="scroll-line"></span><span class="label">SCROLL</span></div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>神罚之后，世界法则破碎</span><span>·</span><span>外部法则涌入普罗米修</span><span>·</span><span>诡异而稳定的世界</span><span>·</span><span>第三纪元 72 年</span><span>·</span>
+      <span>神罚之后，世界法则破碎</span><span>·</span><span>外部法则涌入普罗米修</span><span>·</span><span>诡异而稳定的世界</span><span>·</span><span>第三纪元 72 年</span><span>·</span>
+    </div>
+  </div>
+
+  <section class="sec sec--intro" id="world">
+    <div class="sec__inner">
+      <div class="sec__head">
+        <span class="s-num reveal">00 — 世界观</span>
+        <h2 class="s-title reveal" data-split>世界法则破碎之后</h2>
+      </div>
+      <div class="intro-grid">
+        <p class="body-text reveal">原本普罗米修也如其他世界一样正常运转。神罚落下后，分崩离析的法则碎片无法再像往常一样维持整个世界的规律，破碎的碎片也阻挡不住外来法则——苍穹之外的各种法则力量涌入普罗米修。</p>
+        <p class="body-text reveal">在各类法则力量的影响下，普罗米修不仅没有毁灭，反而以一种诡异且稳定的状态运转。数万年来，人们对法则引起的怪异现象习以为常，并开始借用法则之力，去做先前世界根本做不到的事。</p>
+        <p class="body-text reveal">随着探索更进一步，世人发现破碎的法则换来更多未知的同时，不少法则碎片早已淹没于时间长河中，不知去向。</p>
+      </div>
+      <blockquote class="pull-quote reveal"><p>世人的魔法与科技如何发展，都无法离开这片苍穹之下的世界。</p></blockquote>
+    </div>
+  </section>
+
+  <section class="sec sec--factions" id="factions">
+    <div class="sec__inner">
+      <div class="sec__head sec__head--row">
+        <div>
+          <span class="s-num reveal">01 — 势力与地区</span>
+          <h2 class="s-title reveal" data-split>十二处记载</h2>
+        </div>
+        <p class="sec__note reveal">其中三处仅有标语，正文尚未公开。</p>
+      </div>
+      <ul class="faction-grid">
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/solina.html">
+            <span class="faction-card__media"><img src="assets/img/sea-coral.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">01</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">SOLINA</span>
+              <span class="faction-card__zh">索里纳</span>
+              <span class="faction-card__quote">坐落在普罗米修角落的海青石之乡</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">海青石之乡</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/xihe.html">
+            <span class="faction-card__media"><img src="assets/img/ship-2.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">02</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">XIHE</span>
+              <span class="faction-card__zh">羲和百川</span>
+              <span class="faction-card__quote">日落羲和，海纳百川</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">海源工艺</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/kataria.html">
+            <span class="faction-card__media"><img src="assets/img/castle-academy.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">03</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">KATARIA</span>
+              <span class="faction-card__zh">卡塔瑞亚学院</span>
+              <span class="faction-card__quote">神罚后世人们的第二位先驱者</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">辉石与魔法</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/urvik.html">
+            <span class="faction-card__media"><img src="assets/img/city-chimney.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">04</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">URVIK</span>
+              <span class="faction-card__zh">乌尔维克</span>
+              <span class="faction-card__quote">群峦之中涌出炽热蒸汽的古铜心脏</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">微构蒸汽</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/flona.html">
+            <span class="faction-card__media"><img src="assets/img/dragon-griffin.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">05</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">FLONA</span>
+              <span class="faction-card__zh">芙洛纳</span>
+              <span class="faction-card__quote">巨龙汇聚的传说</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">龙穴</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/capetotina.html">
+            <span class="faction-card__media"><img src="assets/img/city-zephyr.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">06</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">CAPETOTINA</span>
+              <span class="faction-card__zh">卡佩托缇娜</span>
+              <span class="faction-card__quote">至高至盛的新火之城</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">炎鸮团</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/nibiru.html">
+            <span class="faction-card__media"><img src="assets/img/mist-ridge.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">07</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">NIBIRU</span>
+              <span class="faction-card__zh">尼比鲁</span>
+              <span class="faction-card__quote">祖傩六技，优胜劣汰</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">祖傩信仰</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal" data-locked="true">
+          <a class="faction-card__link" href="factions/gondra.html" data-locked="true" aria-disabled="true">
+            <span class="faction-card__media"><img src="assets/img/sea-rays.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">08</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">GONDRA</span>
+              <span class="faction-card__zh">贡德拉岛</span>
+              <span class="faction-card__quote">遥远的海岛上传来一道道钟声</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">档案封存</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/indar.html">
+            <span class="faction-card__media"><img src="assets/img/volcano-ash.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">09</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">INDAR</span>
+              <span class="faction-card__zh">因达瑞火山</span>
+              <span class="faction-card__quote">灰烬永无止境的飘洒着，诉说着火山的故事</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">灰烬使</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal" data-locked="true">
+          <a class="faction-card__link" href="factions/fenrir.html" data-locked="true" aria-disabled="true">
+            <span class="faction-card__media"><img src="assets/img/frame-night-forest.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">10</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">FENRIR</span>
+              <span class="faction-card__zh">芬尼尔</span>
+              <span class="faction-card__quote">高傲的狼群，不会向任何人臣服</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">档案封存</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal" data-locked="true">
+          <a class="faction-card__link" href="factions/poludni.html" data-locked="true" aria-disabled="true">
+            <span class="faction-card__media"><img src="assets/img/volcano-coast.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">11</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">POLUDNI</span>
+              <span class="faction-card__zh">波卢德尼</span>
+              <span class="faction-card__quote">充满奇迹与财富之地</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">档案封存</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+        <li class="faction-card reveal">
+          <a class="faction-card__link" href="factions/qingshi.html">
+            <span class="faction-card__media"><img src="assets/img/gear-black.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="faction-card__veil" aria-hidden="true"></span>
+            <span class="faction-card__idx">12</span>
+            <span class="faction-card__body">
+              <span class="faction-card__en">BLUESTONE</span>
+              <span class="faction-card__zh">青石魔法</span>
+              <span class="faction-card__quote">世界的第一条法则</span>
+            </span>
+            <span class="faction-card__foot">
+              <span class="faction-card__tag">哑青石 · 海青石</span>
+              <span class="faction-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec--archive" id="archive">
+    <div class="sec__inner">
+      <div class="sec__head">
+        <span class="s-num reveal">02 — 档案</span>
+        <h2 class="s-title reveal" data-split>五册记述</h2>
+      </div>
+      <ul class="archive-list">
+        <li class="archive-row reveal">
+          <a class="archive-row__link" href="archive/timeline.html">
+            <span class="archive-row__num">01</span>
+            <span class="archive-row__title"><b>普罗米修编年史</b><i>CHRONICLE</i></span>
+            <span class="archive-row__desc">归一纪元到第三纪元：神罚、先驱者、新火之城、签约日与被删除的年岁。</span>
+            <span class="archive-row__meta">编年 · 4 个纪元</span>
+            <span class="archive-row__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="archive-row reveal">
+          <a class="archive-row__link" href="archive/laws.html">
+            <span class="archive-row__num">02</span>
+            <span class="archive-row__title"><b>缇娜斯法则宝典</b><i>THE LAWS OF TINAS</i></span>
+            <span class="archive-row__desc">十四则被记下的法则：青石、众星、业、世界海、言、全素矿、武、六之祖……</span>
+            <span class="archive-row__meta">法则 · 14 则</span>
+            <span class="archive-row__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="archive-row reveal">
+          <a class="archive-row__link" href="archive/races.html">
+            <span class="archive-row__num">03</span>
+            <span class="archive-row__title"><b>帕提斯种族表</b><i>BESTIARY</i></span>
+            <span class="archive-row__desc">人族、业族、奥尔族、止厄精灵、龙人与灰烬……共十八个条目。</span>
+            <span class="archive-row__meta">种族 · 18 条目</span>
+            <span class="archive-row__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="archive-row reveal">
+          <a class="archive-row__link" href="archive/jobs.html">
+            <span class="archive-row__num">04</span>
+            <span class="archive-row__title"><b>普罗米修职业表</b><i>OCCUPATIONS</i></span>
+            <span class="archive-row__desc">海青石工匠、断浪骑士、印者、蒸汽工匠、祖傩祭司；空白处不作补写。</span>
+            <span class="archive-row__meta">职业 · 25 条</span>
+            <span class="archive-row__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="archive-row reveal">
+          <a class="archive-row__link" href="archive/customs.html">
+            <span class="archive-row__num">05</span>
+            <span class="archive-row__title"><b>苏海勒风俗志</b><i>CUSTOMS</i></span>
+            <span class="archive-row__desc">踏千山，寻四海——魔法井、星火节与亡魂的去处。</span>
+            <span class="archive-row__meta">游志 · 3 章</span>
+            <span class="archive-row__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec--eras" id="eras">
+    <div class="sec__inner">
+      <div class="sec__head">
+        <span class="s-num reveal">03 — 纪年</span>
+        <h2 class="s-title reveal" data-split>四段纪元</h2>
+      </div>
+      <ul class="era-strips">
+        <li class="era reveal">
+          <span class="era__num">0</span>
+          <span class="era__label">归一纪元</span>
+          <span class="era__en">ERA RESTITUTIO</span>
+          <span class="era__note">神罚落下 · 法则破碎 · 两千七百余年</span>
+        </li>
+        <li class="era reveal">
+          <span class="era__num">I</span>
+          <span class="era__label">第一纪元</span>
+          <span class="era__en">ERA PRIMA</span>
+          <span class="era__note">新火之城建立 · 签约日 · 被删除</span>
+        </li>
+        <li class="era reveal">
+          <span class="era__num">II</span>
+          <span class="era__label">第二纪元</span>
+          <span class="era__en">ERA SECUNDA</span>
+          <span class="era__note">杞人出现 · 夺珍之刻 · 归位行动</span>
+        </li>
+        <li class="era reveal is-now">
+          <span class="era__num">III</span>
+          <span class="era__label">第三纪元</span>
+          <span class="era__en">ERA TERTIA</span>
+          <span class="era__note">誓约盟 · 现为第 72 年</span>
+        </li>
+      </ul>
+      <a class="back-idx reveal" href="archive/timeline.html"><span aria-hidden="true">→</span> 展开完整编年史</a>
+    </div>
+  </section>
+
+  <section class="sec sec--laws" id="laws">
+    <div class="sec__inner sec--laws__inner">
+      <div class="laws-figure reveal">
+        <img src="assets/img/gear-pattern.webp" alt="黄铜齿轮与纹样" loading="lazy" decoding="async">
+      </div>
+      <div class="laws-body">
+        <span class="s-num reveal">04 — 法则</span>
+        <h2 class="s-title reveal" data-split>被记下的十四则</h2>
+        <p class="body-text reveal">《缇娜斯法则宝典》记下十四条法则。法则碎片一旦消失，依附其上的力量也随之失传；而法则之间的缝隙里，长出了原本不该存在的东西。</p>
+        <ul class="law-chips">
+        <li class="law-chip reveal"><span>01</span>青石魔法法则</li>
+        <li class="law-chip reveal"><span>02</span>众星法则</li>
+        <li class="law-chip reveal"><span>03</span>业之法则</li>
+        <li class="law-chip reveal"><span>04</span>世界海法则</li>
+        <li class="law-chip reveal"><span>05</span>言之法则</li>
+        <li class="law-chip reveal"><span>06</span>全素矿法则</li>
+        <li class="law-chip reveal"><span>07</span>武之法则</li>
+        <li class="law-chip reveal"><span>08</span>六之祖法则</li>
+        <li class="law-chip reveal"><span>09</span>奥术法则</li>
+        <li class="law-chip reveal"><span>10</span>召唤法则</li>
+        <li class="law-chip reveal"><span>11</span>微构蒸汽法则</li>
+        <li class="law-chip reveal"><span>12</span>除秽法则</li>
+        <li class="law-chip reveal"><span>13</span>灾病法则</li>
+        <li class="law-chip reveal"><span>14</span>「路」法则</li>
+        </ul>
+        <a class="btn" href="archive/laws.html">阅读法则宝典</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="band">
+    <div class="band__media"><img src="assets/img/city-rain.webp" alt="" loading="lazy" decoding="async" data-parallax></div>
+    <div class="band__veil" aria-hidden="true"></div>
+    <div class="band__body">
+      <p class="band__quote reveal">“时如白驹。数万年的发展，人们对法则而引起的怪异现象早就习以为常。”</p>
+      <p class="label reveal">盖亚之书 · 世界观</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot__col foot__col--wide">
+    <p class="foot__line">神罚之后，世界的法则被击碎，外部法则涌入。<br>此处记下的，只是其中一角。</p>
+    <p class="label">第三纪元 72 年 · 盖亚之书</p>
+  </div>
+  <div class="foot__col">
+    <h2 class="foot__h">站点</h2>
+    <ul><li><a href="index.html">首页</a></li><li><a href="archive/timeline.html">纪年</a></li><li><a href="archive/laws.html">法则</a></li><li><a href="archive/races.html">种族</a></li><li><a href="archive/jobs.html">职业</a></li><li><a href="archive/customs.html">风俗</a></li></ul>
+  </div>
+  <div class="foot__col">
+    <h2 class="foot__h">势力</h2>
+    <ul><li><a href="factions/solina.html">索里纳</a></li><li><a href="factions/xihe.html">羲和百川</a></li><li><a href="factions/kataria.html">卡塔瑞亚学院</a></li><li><a href="factions/urvik.html">乌尔维克</a></li><li><a href="factions/flona.html">芙洛纳</a></li><li><a href="factions/capetotina.html">卡佩托缇娜</a></li></ul>
+  </div>
+  <div class="foot__col foot__col--end">
+    <h2 class="foot__h">说明</h2>
+    <p class="foot__small">非官方同人存档 · 世界观原作：盖亚之书系列文档。<br>图片来源见 <a href="CREDITS.md">CREDITS</a>。</p>
+    <p class="label">© THIRD ERA 72</p>
+  </div>
+</footer>
+</body>
+</html>
